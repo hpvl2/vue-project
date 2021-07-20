@@ -1,7 +1,9 @@
 <template>
   <div class="app">
-    <post-form @create="createPost" />
-    <post-list :posts="posts" />
+    <post-form 
+      @create="createPost" />
+    <post-list 
+      :posts="posts" />
   </div>
 </template>
 

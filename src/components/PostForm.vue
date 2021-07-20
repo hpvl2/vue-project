@@ -30,8 +30,7 @@ export default {
   methods: {
     createPost() {
       this.post.id = Date.now();
-      this.$emit('create', this.post) // create - событие, след - аргументы
-      // this.posts.push(newPost);
+      this.$emit('create', this.post)
       this.post = {
         title: '',
         body: '',
