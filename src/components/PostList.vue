@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h3>Список пользователей</h3>
+    <h3>Список постов</h3>
     <post-item
       v-for="post in posts"
       :post="post"
@@ -8,6 +8,9 @@
       @remove="$emit('remove', post)"
     />
   </div>
+  <h2>
+    Список постов пуст
+  </h2>
 </template>
 
 <script>
